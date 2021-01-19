@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Food Delivery App</string>
+    <string name="action_settings">Settings</string>
+    <string name="cart">CART</string>
+</resources>

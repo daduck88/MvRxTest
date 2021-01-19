@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_marginStart="@dimen/mt_padding"
+            android:layout_marginTop="@dimen/mt_padding_half"
+            android:layout_marginBottom="@dimen/mt_padding_half"
+            android:layout_height="60dp" />
+
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mt_padding_half"
+            android:layout_marginEnd="@dimen/mt_padding"
+            android:textSize="16sp"
+            tools:text="Pizza " />
+
+    <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mt_padding_half"
+            android:textSize="16sp"
+            tools:text="24 usd" />
+
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="X"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingredients"
+            android:layout_marginEnd="@dimen/mt_padding" />
+</LinearLayout>
